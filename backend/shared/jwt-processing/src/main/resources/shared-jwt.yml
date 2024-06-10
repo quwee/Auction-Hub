@@ -1,0 +1,9 @@
+app:
+  jwt:
+    secret: C237CCFA6DDF69759B7CB2B474BAV-#qFJ
+    access-millis: 900000
+    refresh-millis: 605000000
+
+logging:
+  level:
+    com.example.shared.jwtprocessing: DEBUG

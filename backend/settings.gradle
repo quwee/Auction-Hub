@@ -1,0 +1,14 @@
+rootProject.name = 'Auction-Hub'
+
+includeBuild 'build-logic'
+
+include 'shared:jwt-processing',
+        'shared:exception-handling',
+        'shared:message-queue-config',
+        'shared:dto',
+        'services:api-gateway',
+        'services:auth-service',
+        'services:user-service',
+        'services:notification-service',
+        'services:auction-service',
+        'services:websocket-server'

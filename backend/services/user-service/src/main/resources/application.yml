@@ -1,0 +1,38 @@
+server:
+  port: 8084
+
+spring:
+
+  application:
+    name: user-service
+
+  config:
+    import: shared-jwt.yml
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auction_hub
+    username: postgres
+    password: postgres
+
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+
+
+jwt-processing:
+  filter:
+    enabled: true
+    excluded-paths:
+      - /api/v1/users/create
+      - /api/v1/users/get
+
+exception-handling:
+  enabled: true
+
+logging:
+  level:
+    com.example.userservice: DEBUG
+    com.example.shared.jwtprocessing: DEBUG
+    com.example.shared.exceptionhandling: DEBUG

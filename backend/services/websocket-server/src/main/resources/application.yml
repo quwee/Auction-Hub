@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+spring:
+
+  application:
+    name: websocket-server
+
+  config:
+    import: shared-jwt.yml
+
+  amqp:
+    deserialization:
+      trust:
+        all: true
+        
+app:
+  publish-destination-prefix: /topic/auction.
+
+jwt-processing:
+  filter:
+    enabled: false
+
+logging:
+  level:
+    com.example.websocketserver: DEBUG

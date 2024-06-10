@@ -1,0 +1,40 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: auction-service
+
+  config:
+    import: shared-jwt.yml
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auction_hub
+    username: postgres
+    password: postgres
+
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+
+app:
+  img-upload-path: ${AUCTION_HUB_IMG_UPLOAD_PATH}
+
+jwt-processing:
+  filter:
+    enabled: true
+    excluded-paths:
+      - /api/v1/auction
+      - /api/v1/auction/details/{id}
+      - /api/v1/auction/load-image/{imageName}
+
+exception-handling:
+  enabled: true
+
+logging:
+  level:
+    com.example.auctionservice: DEBUG
+    com.example.shared.exceptionhandling: DEBUG
+    com.example.shared.jwtprocessing: DEBUG

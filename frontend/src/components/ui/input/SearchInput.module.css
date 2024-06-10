@@ -1,0 +1,27 @@
+.search__input__container {
+    width: 100%;
+    position: relative;
+}
+
+.search__input {
+    padding: 10px 50px 10px 15px;
+    width: 100%;
+    border: 1px solid teal;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search__button {
+    right: 10px;
+    top: 8px;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-image: url('/src/assets/search.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}

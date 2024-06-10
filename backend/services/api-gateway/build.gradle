@@ -1,0 +1,25 @@
+plugins {
+	id 'app-spring-convention-plugin'
+}
+
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+
+dependencies {
+	// maven bom for spring cloud
+	implementation platform(libs.spring.cloud)
+
+	// versions managed by spring
+	implementation 'org.springframework.cloud:spring-cloud-starter-gateway'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'io.projectreactor:reactor-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+}

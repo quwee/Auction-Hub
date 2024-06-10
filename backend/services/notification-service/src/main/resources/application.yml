@@ -1,0 +1,42 @@
+server:
+  port: 8085
+
+spring:
+
+  application:
+    name: notification-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auction_hub
+    username: postgres
+    password: postgres
+
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: authservice561@gmail.com
+    password: eysqxysndujyxqee
+    properties:
+      mail:
+        debug: false
+        smtp:
+          starttls:
+            enable: true
+      transport:
+        protocol: smtp
+      smtp:
+        auth: true
+
+template:
+  url:
+    user-register: http://localhost:3000/confirm-registration?token=
+
+logging:
+  level:
+    com.example.notificationservice: DEBUG

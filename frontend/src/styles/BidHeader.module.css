@@ -1,0 +1,70 @@
+.bid__info__container {
+    background-color: #f2f2f2;
+    padding: 0 20px 20px 20px;
+}
+
+.bid__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first__container {
+    flex: 1;
+    min-width: fit-content;
+    margin-top: 20px;
+}
+
+.second__container {
+    min-width: 200px;
+    margin-top: 20px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content {
+    margin: 10px 0 0 3px;
+    font-size: 18px;
+}
+
+.current__price {
+    color: #199919;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price__step {
+    font-size: 18px;
+}
+
+.complete__message {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

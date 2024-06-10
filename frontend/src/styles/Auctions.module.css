@@ -1,0 +1,13 @@
+.no__auctions__header {
+    margin-top: 250px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.loader__container {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+}

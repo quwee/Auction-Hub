@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+      - id: auth_service_route
+        uri: http://localhost:8081
+        predicates:
+        - Path=/api/{version}/auth/**
+
+      - id: auction_service_route
+        uri: http://localhost:8083
+        predicates:
+        - Path=/api/{version}/auction/**
+
+      - id: user_service_route
+        uri: http://localhost:8084
+        predicates:
+        - Path=/api/{version}/users/change-details
+
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:3000"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+            allowCredentials: true

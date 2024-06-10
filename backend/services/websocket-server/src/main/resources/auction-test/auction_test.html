@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="auction_test.css">
+    <title>Auction Test</title>
+</head>
+<body>
+    <div class="container">
+        <div class="auction-container">
+            <div class="bid-container">
+
+                <div id="bidListContainer" class="bid-list-container hidden">
+                    <div class="bid-list" id="bidList">
+                        <!--<div class="bid-list-element">
+                            <div class="bid-list-element-username">John Doe</div>
+                            <div class="bid-list-element-price">1500</div>
+                            <div class="bid-list-element-place-time">13:29</div>
+                        </div>
+                        <div class="bid-list-element bid-list-element-user">
+                            <div class="bid-list-element-username">John Doe</div>
+                            <div class="bid-list-element-price">1500</div>
+                            <div class="bid-list-element-place-time">13:29</div>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="place-bid-container">
+                    <input id="placeBidPriceInput" type="number" min="1" placeholder="price">
+                    <button id="placeBidBtn">Place Bid</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@5.0.0/bundles/stomp.umd.min.js"></script>
+    <script src="auction_test.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.logoText {
+    color: #00caca;
+    font-size: 24px;
+    font-family: Algerian, sans-serif;
+    text-decoration: none;
+    margin-left: 3%;
+    min-width: fit-content;
+    white-space: nowrap;
+}

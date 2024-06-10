@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background: #f9f9f9;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 1px 2px #c7c7c7;
+}
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}

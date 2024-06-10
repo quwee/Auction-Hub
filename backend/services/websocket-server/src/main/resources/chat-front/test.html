@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Chat</title>
+</head>
+<body>
+    <h3>Messaging</h3>
+    <div class="container">
+        <div class="btn-container">
+            <button id="start-chatting-btn">Start chatting</button>
+        </div>
+        
+        <div id="chatContainer" class="hidden">
+            <ul id="messageArea"></ul>
+            <div class="send-message-container">
+                <input id="messageInput" type="text" placeholder="Message">
+                <button id="messageSendBtn">Send</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@5.0.0/bundles/stomp.umd.min.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>

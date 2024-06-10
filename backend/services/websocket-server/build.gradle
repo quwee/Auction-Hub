@@ -1,0 +1,28 @@
+plugins {
+    id 'app-spring-convention-plugin'
+}
+
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+
+dependencies {
+    implementation project(':shared:jwt-processing')
+    implementation project(':shared:message-queue-config')
+    implementation project(':shared:dto')
+
+    implementation platform(libs.spring.cloud)
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+    implementation 'io.projectreactor.netty:reactor-netty'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

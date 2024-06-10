@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.left {
+    width: 70%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: fit-content;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 10px 120px 30px 50px;
+    margin-bottom: 30px;
+    background-color: #f2f2f2;
+}
+
+.auction__info__container {
+    margin-top: 15px;
+}
+
+.gallery__container {
+    width: fit-content;
+}
+
+.auction__content__container {
+    overflow: hidden;
+
+}
+
+.auction__title {
+    margin: 5px 0 0 5px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.auction__desc {
+    margin-top: 10px;
+}
+
+.content__attr__container {
+    margin-top: 15px;
+    border-spacing: 0 5px;
+}
+
+.content__attr__item__container {
+}
+
+.content__attr__label {
+    font-weight: 600;
+}
+
+.content__attr {
+    margin-left: 10px;
+}
+
+.desc__container {
+    margin-top: 15px;
+    min-width: 500px;
+}
+
+.desc__label {
+    margin-left: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.desc__block__container {
+    margin-top: 5px;
+    box-sizing: border-box;
+    display: flex;
+    border: 2px solid #8b8b8b;
+    border-radius: 5px;
+    background-color: #d9d8d8;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.desc__view {
+    box-sizing: border-box;
+    padding: 30px 10px;
+    border-right: 1px solid #8b8b8b;
+}
+
+.desc__area {
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.info__icon {
+    width: 30px;
+}
+
+
+
+.bid__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.bid__info__container {
+    width: 150px;
+    min-width: fit-content;
+    max-width: 200px;
+    margin: 0 5px;
+}
+
+.bid__info__label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bid__info__field {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: end;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,50 @@
+.burger__btn {
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.top__line {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 1px;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+.center__line {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    top: 9px;
+}
+
+.bottom__line {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+.top__line__active {
+    width: 27px;
+}
+
+.center__line__active {
+    width: 35px;
+}
+
+.top__line,
+.center__line,
+.bottom__line {
+    transition: width 0.3s ease;
+}

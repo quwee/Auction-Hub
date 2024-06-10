@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.input__container {
+    flex: 1;
+}
+
+.send__input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: 1px solid #767676;
+}
+
+.send__input:focus {
+    outline: 2px solid teal;
+    outline-offset: -1px;
+}
+
+.send__icon {
+    width: 20px;
+}
+
+.send__button {
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding-left: 3px;
+    border-radius: 50%;
+    background-color: #00caca;
+}
+
+.send__button:hover {
+    cursor: pointer;
+}
